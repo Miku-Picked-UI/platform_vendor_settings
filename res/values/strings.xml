@@ -39,4 +39,8 @@
     <string name="color_down_arrow" translatable="false">"↓"</string>
     <string name="longpress_info">Longpress box to save color</string>
 
+    <string name="custom_image_restore_default">Restore default</string>
+    <string name="custom_image_pick_from_gallery">Choose from gallery</string>
+    <string name="custom_image_alpha_title">Opacity</string>
+
 </resources>

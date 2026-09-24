@@ -20,4 +20,8 @@
     <string name="press_color_to_apply">点击下面的颜色来应用你的更改哦！</string>
     <string name="hex">十六进制值:</string>
 
+    <string name="custom_image_restore_default">恢复默认</string>
+    <string name="custom_image_pick_from_gallery">从相册选择</string>
+    <string name="custom_image_alpha_title">透明度设置</string>
+
 </resources>
