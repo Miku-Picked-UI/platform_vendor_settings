@@ -86,7 +86,11 @@ public class ColorPickerPreference extends Preference implements
 
     @Override
     protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
-        onColorChanged(restoreValue ? getPersistedInt(mValue) : (Integer) defaultValue);
+        // Without a saved value, start from the default color (settings:defaultColorValue)
+        // instead of black.
+        int fallback = mUsesDefaultButton ? mDefValue : mValue;
+        if (defaultValue instanceof Integer) fallback = (Integer) defaultValue;
+        onColorChanged(restoreValue ? getPersistedInt(fallback) : fallback);
     }
 
     private void init(Context context, AttributeSet attrs) {
